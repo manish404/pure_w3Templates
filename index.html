@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template 1</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./ms1.css">
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <nav>
+        <i class="fa fa-bars" aria-hidden="true" id="navLogo" onclick="showMenu()"></i>
+    </nav>
+
+    <a href="#" id="hide" onclick="hideNav()">+</a>
+
+    <!-- NAVBAR -->
+    <nav class="nav-bar" id="navBar">
+        <a href="#" class="navs">Home</a>
+        <a href="#bandSection" class="navs">Band</a>
+        <a href="#tourSection" class="navs">Tour</a>
+        <a href="#contactSection" class="navs">Contact</a>
+        <a href="#" class="navs" id="more">More</a>
+    </nav>
+
+    <!-- =================================CAROUSEL -->
+    <div class="carousel">
+        <div id="jumb1" class="jumbos">
+            <img src="./Images/chicago.jpg" alt="" id="carslImg">
+            <h3 id="carslHead">Chicago</h3>
+            <p id="carslPg">Thank you, Chicago. A lot of memories with you joyful guys</p>
+        </div>
+    </div>
+
+    <!-- =================================THE BAND -->
+    <div class="band" id="bandSection">
+        <div>
+            <h2>THE BAND</h2>
+            <h5>We love music</h5>
+            <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+        </div>
+        <div class="bandImgs">
+
+            <table>
+                <tr>
+                    <th>Manish</th>
+                    <th>Aarav</th>
+                    <th>Aashutosh</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="./Images/bandmember.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="./Images/bandmember.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="./Images/bandmember.jpg" alt="" srcset="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- ===============================TOUR DATES -->
+    <div class="tours" id="tourSection">
+        <div>
+            <h2 id="tour">TOUR DATES</h2>
+            <h5>Remember to book your tickets!</h5>
+
+            <div class="tourMonths">
+                <h3>September <span>Sold Out</span></h3>
+                <h3>October <span>Sold Out</span></h3>
+                <h3>November <span id="tourAvailable">3</span></h3>
+            </div>
+        </div>
+
+        <div class="tickets">
+            <div id="ticket">
+                <img src="./Images/paris.jpg" alt="">
+                <h3>Paris</h3>
+                <h2>Fri 27 Nov 2018</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, dignissimos?</p>
+                <button onclick="showTicketForm()">Buy Tickets</button>
+            </div>
+            <div id="ticket">
+                <img src="./Images/newyork.jpg" alt="">
+                <h3>New York</h3>
+                <h2>Fri 27 Nov 2018</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, dignissimos?</p>
+                <button onclick="showTicketForm()">Buy Tickets</button>
+            </div>
+            <div id="ticket">
+                <img src="./Images/sanfran.jpg" alt="">
+                <h3>San Francisco</h3>
+                <h2>Fri 27 Nov 2018</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, dignissimos?</p>
+                <button onclick="showTicketForm()">Buy Tickets</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- =============================Ticket Modal -->
+
+    <div class="ticketModal" id="ticketForm">
+        <div id="ticketModal">
+            <div class="top">
+                <span onclick="closeTM()"> + </span>
+                <h3>Tickets</h3>
+            </div>
+
+            <div class="ticketForm">
+                <form action="">
+                    <h4>Tickets, $15 per person</h4>
+                    <input type="text" name="" placeholder="How many?" readonly>
+                    <h4>Send To</h4>
+                    <input type="email" name="" placeholder="Enter email" readonly>
+                    <input type="submit" value="PAY">
+                    <p>Need <span id="help">help?</span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============================CONTACT -->
+    <div class="contact" id="contactSection">
+        <h3 id="contact">CONTACT</h3>
+        <p>Fan? Drop a Note!</p>
+        <div class="data">
+            <h3>Chicago, US</h3>
+            <h3>Phone : +00 151515</h3>
+            <h3>Email : mail@mail.com</h3>
+        </div>
+        <div class="contactForm">
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Email" required>
+            <input type="text" placeholder="Message" id="message" required>
+            <input type="submit" value="SEND">
+        </div>
+    </div>
+
+    <!-- ===============================MAP -->
+    <div>
+        <img src="./Images/map.jpg" id="map">
+    </div>
+
+    <!-- ===============================FOOTER -->
+    <footer>
+        <h5>Made By Manish Sharma.</h5>
+    </footer>
+
+    <script src="./ms1.js"> </script>
+</body>
+
+</html>

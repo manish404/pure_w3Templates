@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#navLogo{
+    font-size: 26px;
+    padding: 30px 0 0 30px;
+    z-index: 999;
+    color: aqua;
+    position: fixed;
+    display: none;
+}
+
+.nav-bar{
+    position: fixed;
+    height: 28px;
+    width: 100%;
+    background-color: #000;
+    padding: 14px;
+    z-index: 1;
+}
+
+.navs{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+#hide{
+    display: none;
+    color: aquamarine;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    font-size: 34px;
+    padding: 0;
+    margin: 0;
+}
+
+.jumbos img{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.jumbos h3{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 10px 2px 10px #000;
+}
+
+.jumbos p{
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -82%);
+    color: white;
+    font-size: 20px;
+}
+
+.band{
+    text-align: center;
+    width: 60%;
+    margin: 20px auto 70px auto;
+}
+
+.band h2{
+    font-size: 48px;
+    padding-top: 60px;
+    line-height: 100px;
+    font-family: serif;
+    letter-spacing: 1px;
+}
+
+.band h5{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 10px;
+}
+
+.band p{
+    font-size: 15px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.bandImgs{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.bandImgs th{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.bandImgs img{
+    height: 160px;
+    width: 160px;
+    padding: 10px 60px;
+}
+
+.tours{
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
+
+#tour{
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 20px;
+    padding: 50px 0 40px 0;
+}
+
+.tours h5{
+    font-size: 14px;
+    padding: 10px 0 20px 0;
+}
+
+.tourMonths{
+    background: #fff;
+    color: grey;
+    font-size: 14px;
+    font-weight: 100;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.tourMonths h3{
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+}
+
+.tourMonths span{
+    margin: 0 0 0 40px;
+    background: red;
+    color: white;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+#tourAvailable{
+    float: right;
+    font-size: 14px;
+    font-weight: 50;
+    border-radius: 50px;
+    background: #000;
+    color: white;
+    padding: 4px 10px;
+}
+
+.tickets{
+    display: flex;
+    width: 80%;
+    margin: 40px auto;
+    background-color: #000;
+}
+
+.tickets img{
+    height: 240px;
+    width: 260px;
+    margin: 0;
+}
+
+.tickets img:hover{
+    opacity: 0.8;
+}
+
+#ticket{
+    background-color: #000;
+    color: black;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 0;
+}
+
+#ticket h3{
+    padding: 20px 0 5px 0;
+}
+
+#ticket h2{
+    font-size: 15px;
+    color: lightslategrey;
+    padding: 10px 0;
+    font-weight: 10;
+}
+
+#ticket p{
+    font-size: 16px;
+    padding: 6px 0;
+}
+
+#ticket button{
+    font-size: 18px;
+    background-color: #000;
+    color: white;
+    padding: 14px 30px;
+    margin: 10px 0 10px 0;
+    border: none;
+    outline: none;
+}
+
+#ticket button:hover{
+    background-color: grey;
+    transition-duration: 0.4s;
+}
+
+#ticket h3, #ticket h2, #ticket p{
+    background-color: #fff;
+    width: 260px;
+}
+
+.contact{
+    background-color: #fff;
+    width: 100%;
+    padding: 100px 0;
+}
+
+#contact{
+    font-size: 30px;
+    font-weight: 50;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact p{
+    padding: 15px 0;
+    color: grey;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
+
+.data{
+    width: 50%;
+    margin: 0 0;
+    text-align: center;
+    display: inline-block;
+    margin: 30px 0 0 0;
+}
+
+.data h3{
+    font-weight: 10;
+    padding: 5px 0;
+}
+
+.contactForm{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin: 30px 0 30px 0;
+    box-sizing: border-box;
+}
+
+.contactForm input[type="text"]{
+    width: 100%;
+    height: 30px;
+    width: 220px;
+    margin: 10px 0;
+}
+
+#message{
+    width: 450px;
+}
+
+.contactForm input[type="text"]::placeholder{
+    font-size: 14px;
+    padding: 0 0 0 6px;
+}
+
+.contactForm input[type="submit"]{
+    display: block;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin: 10px 32%;
+    float: right;
+    transition-duration: 1s;
+}
+
+.contactForm input[type="submit"]:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+#map{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
+
+footer{
+    text-align: center;
+    padding: 100px;
+}
+
+footer>h5{
+    font-size: 16px;
+    color: grey;
+    font-weight: 2;
+}
+
+/* Ticket Modal design */
+.ticketModal{
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+#ticketModal{
+    display: block;
+    background-color: #fff;
+    width: 60%;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animeTM 1.5s forwards;
+}
+
+@keyframes animeTM{
+    from{
+        width: 40%;
+    }
+    to{
+        width: 60%;
+    }
+}
+
+#ticketModal .top{
+    background-color: #009688;
+    width: 100%;
+    height: 100px;
+}
+
+.top span{
+    float: right;
+    transform: rotate(45deg);
+    font-size: 30px;
+    padding: 10px 14px 0 0;
+    color: white;
+    cursor: pointer;
+}
+
+.top h3{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 20;
+}
+
+.ticketForm{
+    width: 100%;
+    padding: 10px 0 10px 10px;
+}
+
+.ticketForm h4{
+    padding: 20px 10px 10px 0;
+    font-weight: 50;
+}
+
+.ticketForm input[type="text"], .ticketForm input[type="email"]{
+    display: flex;
+    height: 32px;
+    width: 95%;
+}
+
+.ticketForm input::placeholder{
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+.ticketForm input[type="submit"]{
+    display: flex;
+    font-size: 16px;
+    color: white;
+    background-color: #009688;
+    width: 95%;
+    padding: 15px 0;
+    justify-content: center;
+    margin: 10px 0 0 0;
+    border: none;
+    outline: none;
+}
+
+.ticketForm input[type="submit"]:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+.ticketForm p{
+    float: right;
+    padding: 20px 40px;
+}
+
+.ticketForm p>span{
+    color: #009688;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-bar{
+        height: 18px;
+        display: none;
+        padding: 6px;
+        margin: 28px 0 0 0;
+    }
+
+    #navLogo{
+        display: block;
+    }
+
+    .jumbos img{
+        height: 100%;
+    }
+
+    .jumbos h3{
+        font-size: 18px;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -42%);
+    }
+
+    .jumbos p{
+        width: 100%;
+        font-size: 16px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        text-align: center;
+    }
+
+    .band{
+        width: 98%;
+        display: block;
+    }
+
+    .band p{
+        padding: 6px;
+        margin: 6px;
+    }
+
+    .bandImgs table{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bandImgs img{
+        width: 100%;
+        padding: 0;
+    }
+
+    .tourMonths{
+        width: 96%;
+        margin: 20px auto;
+        border-radius: 2px;
+    }
+
+    .tickets{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    #ticket{
+        margin: 0 auto;
+        padding: 0 36%;
+    }
+
+    .ticketForm{
+        padding: 0 5px;
+        margin: auto;
+    }
+
+    .contact{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .data{
+        width: 100%;
+    }
+
+    .contactForm{
+        width: 100%;
+        padding: 0 0 0 14px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .contactForm input[type="submit"]{
+        margin: 0 40%;
+    }
+
+    #map{
+        width: 100%;
+    }
+
+    footer>h5{
+        font-size: 14px;
+    }
+
+    /* Ticket Form */
+    @keyframes animeTM{
+        from{
+            width: 40%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 520px){
+    #ticket{
+        padding: 0 24%;
+    }
+
+    #more{
+        display: none;
+    }
+}
